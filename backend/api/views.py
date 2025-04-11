@@ -8,6 +8,7 @@ from .models import AvailableSlot, Booking
 from .serializers import AvailableSlotSerializer, BookingSerializer
 import logging
 
+#Appointment
 # Configure logger
 logger = logging.getLogger(__name__)
 
