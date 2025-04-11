@@ -1,0 +1,61 @@
+.testimonials {
+    padding: 10px;
+    background-color: #333; /* Darker background */
+    border-radius: 8px;
+    margin: 10px 0; /* Reduced margin */
+  }
+  
+  .testimonials h2 {
+    text-align: center;
+    font-size: 24px; /* Adjust font size */
+    color: #FFD700; /* Change font color to gold */
+    font-family: 'Arial', sans-serif; /* Change font family */
+    margin-bottom: 10px; /* Reduced margin bottom */
+  }
+  
+  .video-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 video boxes in a row */
+    gap: 10px; /* Reduced gap between videos */
+  }
+  
+  .video-item {
+    position: relative;
+    width: 100%;
+    padding-bottom: 177.78%; /* 9:16 aspect ratio */
+    background-color: #000; /* Black background for video container */
+  }
+  
+  .video-item iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 8px; /* Rounded corners for a cleaner look */
+  }
+  
+  /* Media Queries for Responsiveness */
+  
+  /* For tablets and larger devices (landscape) */
+  @media (max-width: 1024px) {
+    .video-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 video boxes in a row */
+    }
+  
+    .testimonials h2 {
+      font-size: 22px; /* Slightly smaller font size */
+    }
+  }
+  
+  /* For mobile devices (portrait) */
+  @media (max-width: 768px) {
+    .video-grid {
+      grid-template-columns: 1fr; /* 1 video box in a row */
+    }
+  
+    .testimonials h2 {
+      font-size: 20px; /* Smaller font size */
+    }
+  }
